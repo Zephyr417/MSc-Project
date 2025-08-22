@@ -85,9 +85,27 @@ price_df
 
 3. Two different sentiment based strategies with different thresholds were backtested. The results show that the second sentiment strategy consistently outperforms the buy-and-hold benchmark by 20 percentage points, even during volatile and bearish periods![tradingsignal](sentiment3_2.png)
 
+
 ## Insights
-- LLM-based sentiment analysis could enhance market insight and trading performance.
-- It is necessary to retrain FinBERT model on GDELT 2.0 event database to improve its prediction's accuracy.
-- The countinuous_sum_sigmoid signal best correlates with Bitcoin daily returns. It works as an indicator to instruct the tradin signal when to buy or sell the Bitcoin.
-- Sentiment based strategy consistently shows a much higher and positive returns than the baseline buy-and-hold strategy.
-- Advanced machine learning methods could be used to enhance the performance of the trading signal.
+### **1. Impact of LLM-Based Sentiment Analysis**
+- LLM-based sentiment analysis provides **deeper market insights** by capturing complex contextual relationships from financial news.
+- The **FinBERT model** demonstrates strong capability in extracting sentiment from Bitcoin-related news titles.
+- However, to improve prediction accuracy, it is necessary to **retrain the FinBERT model** on more comprehensive datasets, such as the **GDELT 2.0 event database**, to capture domain-specific nuances.
+
+### **2. Relationship Between Sentiment and Bitcoin Returns**
+- There is a clear correlation between **market sentiment** derived from news and **Bitcoin daily returns**.
+- Among multiple sentiment-based signals, the **`continuous_sum_sigmoid`** signal shows the **highest correlation** with Bitcoin price changes.
+- This signal effectively identifies potential turning points in the market and can be used as an **indicator** for when to buy or sell Bitcoin.
+
+### **3. Performance of Sentiment-Based Trading Strategies**
+- **Sentiment-driven trading strategy** consistently achieves **higher positive returns** compared to a **baseline buy-and-hold strategy**.
+- Backtesting shows that sentiment signals enable **timely entry and exit points**, reducing exposure to market downturns while maximizing profit opportunities.
+- By leveraging news-driven sentiment, trading decisions become **more dynamic** and **data-driven**.
+
+### **4. Enhancing Trading Signal Performance**
+- While FinBERT-based sentiment signals provide strong predictive power, **advanced machine learning techniques** could further enhance accuracy.
+- Approaches such as:
+  - **Reinforcement learning** for optimizing trading decisions.
+  - **Hybrid sentiment-price models** combining FinBERT outputs with historical price data.
+  - **Time-series transformers** for capturing long-term dependencies in sentiment and price movements.
+- These enhancements could lead to **better risk-adjusted returns** and more robust trading strategies.
