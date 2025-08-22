@@ -79,11 +79,11 @@ price_df
 
 
 ## Analysis
-1. FinBERT is retrained based on 600 manually labeled news headlines from GDELT 2.0 event database. The accuracy of the retrained FinBERT improved from 64.8% to 73.8%. ![retraining](retraining.png)
+1. FinBERT is retrained based on 600 manually labeled news headlines from GDELT 2.0 event database. The accuracy of the retrained FinBERT improved from 64.8% to 73.8%. ![retraining](Images/retraining.png)
 
 2. Using the retrained FinBERT model, the sentiment was extracted and 6 sentiment signals were built. Using the Bitcoin price data, 6 return signals were built as well. The best correlation exists between daily return signal and countinuous_sum_sigmoid sentiment signal.
 
-3. Two different sentiment based strategies with different thresholds were backtested. The results show that the second sentiment strategy consistently outperforms the buy-and-hold benchmark by 20 percentage points, even during volatile and bearish periods![tradingsignal](sentiment3_2.png)
+3. Two different sentiment based strategies with different thresholds were backtested. The results show that the second sentiment strategy consistently outperforms the buy-and-hold benchmark by 20 percentage points, even during volatile and bearish periods![tradingsignal](Images/sentiment3_2.png)
 
 
 ## Insights
