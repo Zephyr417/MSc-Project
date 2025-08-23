@@ -1,4 +1,4 @@
-# The Introduction of the MSc Project
+# Sentiment analysis with LLMs for predicting Bitcoin trends
 ## Overview
 This project uses LLMs to perform sentiment analysis on financial news headlines to predict Bitcoin price trends. First we replicated FinBERT’s performance and retrained it on GDELT subset to improve its accuracy from 64.8% to 73.8%. Next, three sentiment scores were extracted from GDELT news dataset using retranied FinBERT model and the results were aggregated to develop multiple sentiment signals. Then we calculate Bitcoin returns from Bitcoin price dataset and construct multiple return signals. By calculating Pearson correlation coefficient, we find that the continuous sum sigmoid sentiment signal demonstrates the strongest correlation with Bitcoin returns. Based on this, we designed trading strategies, with one consistently outperforming the buy-and-hold benchmark by 20 percentage points, even during volatile and bearish periods.
 
